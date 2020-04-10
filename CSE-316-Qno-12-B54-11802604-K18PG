@@ -1,0 +1,16 @@
+#include<iostream.h>
+3include<conio.h>
+using namespace std; 
+  
+// creating a structure of a process 
+struct process { 
+    int processno; 
+    int AT; 
+    int BT; 
+  
+    // for backup purpose to print in last 
+    int BTbackup; 
+    int WT; 
+    int TAT; 
+    int CT; 
+}; 
