@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+using namespace std; 
+  
+// creating a structure of a process/students
+struct process { 
+    int processno; 
+    int AT; 
+    int BT; 
+  
+    // for backup purpose to print in last 
+    int BTbackup; 
+    int WT; 
+    int TAT; 
+    int CT; 
+}; 
+  
+// creating a structe of 3  students
+struct process p[3]; 
+  
+// variable to find the total time 
+int totaltime = 0; 
+int prefinaltotal = 0; 
+// comparator function for sort() 
+bool compare(process p1, process p2) 
+{ 
+    // compare the processno of two processes 
+    return p1.processno < p2.processno; 
+} 
